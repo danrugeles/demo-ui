@@ -1,7 +1,9 @@
 <template>
   <div class="video">
     <img width="5%" src="../assets/logo.png">
-    <span class="tag" v-for="i in 3">#{{i}}</span>
+    <div >
+      <span class="tag" v-for="i in 3">#{{i}}</span>
+    </div>
   </div>
 </template>
 
@@ -19,6 +21,12 @@ export default {
 
 <style scope>
 
-.tag{ border:black 1px;}
+.tag{ 
+
+  padding:0 2px 0 2px;
+  margin-right:3px;
+  border:black solid 1px;
+  border-radius: 4px;
+}
 
 </style>

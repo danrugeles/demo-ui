@@ -1,13 +1,16 @@
 <template>
   <div class="hello">
 
+    <header id="theheader">
     <!--img width="20%" src="../assets/allyisonlogo.png"-->
-    <h1>aas</h1>
-a
-    <button v-for="id in categories" type="button" class="btn btn-primary">
-      <span class="hotkey">{{id[0]}}</span>
-      {{id[1]}}
-    </button>
+    <h1>Allison</h1>
+       <button v-for="id in categories" type="button" class="btn btn-primary">
+        <span class="hotkey">{{id[0]}}</span>
+          {{id[1]}}
+      </button>
+    </header>
+
+ 
 
     <Video title="video 1" class="allyvideo"/>
     <Video title="video 2" class="allyvideo"/>
@@ -37,7 +40,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+#theheader{
+  width:100%;
+  height:200px;
+}
 .allyvideo{
   float:left;
 }
